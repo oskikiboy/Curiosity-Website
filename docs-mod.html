@@ -122,6 +122,7 @@
 				<h1 class="title is-1" style="font-family: Montserrat;">
 					<span style="title is-2">Documentation</span>
 				</h1>
+                <h2 class="subtittle">Information Commands</h2>
 			</div>
     </div>
 </section>
@@ -137,11 +138,11 @@
   </p>
   <ul class="menu-list">
     <li>
-      <a class="is-active is-info">Commands</a>
+      <a href="docs.html">Commands</a>
       <ul>
         <li><a href="docs-info.html">Information</a></li>
         <li><a href="docs-fun.html">Fun Commands</a></li>
-        <li><a href="docs-mod.html">Moderation</a></li>
+        <li><a href="docs-mod.html" class="is-active">Moderation</a></li>
       </ul>
     </li>
     <li><a>Upcoming Features</a></li>
@@ -152,14 +153,32 @@
 
   </div>
     <div class="column">
-      <article class="message is-info">
-  <div class="message-header">
-    What is a command?
-  </div>
-  <div class="message-body">
-      A command is the way you can interact with the bot. For example if you type <code>;help</code> the bot notices this and returns the help index as you have just interacted with the bot in the respect of telling it what to do using a command.
-  </div>
-</article>
+            <table class="table is-bordered is-striped is-narrow">
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td><code>;warn</code></td>
+              <td>Warns the specified user for the action defined.</td>
+            </tr>
+            <tr>
+                <td><code>;kick</code></td>
+              <td>Kicks the specified user from the server.</td>
+            </tr>
+            <tr>
+                <td><code>;purge</code></td>
+              <td>Clears the specified amount of messages in the channel you issued the command in.</td>
+            </tr>
+            <tr>
+                <td><code>;ban</code></td>
+              <td>Bans the specified user from the server.</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
     </div>
     </div>
