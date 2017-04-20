@@ -1,2 +1,2 @@
-## Bulma Jekyll Theme
+## Curiosity Website
 
