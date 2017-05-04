@@ -2444,6 +2444,10 @@ input[type="submit"].button {
   background-color: #3273dc;
 }
 
+.progress.is-orange::-webkit-progress-value {
+  background-color: orange;
+}
+
 .progress.is-success::-webkit-progress-value {
   background-color: #23d160;
 }
