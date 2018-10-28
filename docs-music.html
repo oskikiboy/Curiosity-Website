@@ -56,6 +56,7 @@
             }
         }
     </style>
+
     <body>
         <nav class="nav has-shadow">
             <div class="nav-left">
@@ -131,10 +132,93 @@
                     <h1 class="title is-2" style="font-family: Montserrat;">
                         <span style="title is-2">Documentation</span>
                     </h1>
-                    <h2 class="subtittle">Music Commands</h2>
+                    <h2 class="subtittle">Music Commands <br> <strong>For more info click the red button</strong></h2>
                 </div>
             </div>
         </section>
+        <div id="disclaimer" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="container is-fluid" style="padding:40px">
+                    <article class="message is-danger" >
+                        <div class="message-header" style="background-color:#B22222;">
+                            Curiosity Music Guide
+                        </div>
+                        <div class="message-body" style="color:#B22222;">
+                            <div class="message-body">
+                                <b>Music Player Information</b><br>
+                                Welcome to Curiosity Music !<br>
+                                First of it's good to understand that<br>
+                                the Queue and the Playlist are 2 complete<br>
+                                seperate things. The Queue are the songs you<br>
+                                and your fellow members want to play. The playlist<br>
+                                are the songs Curiosity will be playing after the<br>
+                                queue is finished. This can be toggle on and off<br>
+                                in the settings menu.<br>
+                                <hr>
+                                <b>The Queue:</b><br>
+                                  With the play command you can put songs queue.<br>
+                                  Curiosity will play them one by one until it's empty<br>
+                                  After this it will turn to the servers playlist<br>
+                                  If the playlist is playing and you put a new song in<br>
+                                  the queue. Curiosity will first play the songs in the queue<br>
+                                  before switching back to the playlist.
+                                  <hr>
+                                  <b>The Playlist:</b><br>
+                                  The first time Curiosity will play the playlist on<br>
+                                  your server it will first inject all song to our database.<br>
+                                  We have a pre-configured list (5000+) of songs ready to<br>
+                                  go. You can completely modify your servers playlist if<br>
+                                  you like to. With the save and delete command you can<br>
+                                  add or delete song from it. You can also decide to make<br>
+                                  a brand new server playlist. Then you can choose your<br>
+                                  own songs to play after the queue is finished.<br>
+                                  <hr>
+                                  <b>Saving and Deleting songs:</b><br>
+                                  This can be done once a song is playing. These commands<br>
+                                  do not take any input. You can right now not save or delete<br>
+                                  a song that is not currently playing. If you want to save a <br>
+                                  song, first put it in the queue. Then once it's playing<br>
+                                  you can save it. The same counts for deleting a song.<br>
+                                  In a later update we will make sure you can do this<br>
+                                  in multiple ways.<br>
+                                  <hr>
+                                  <hr>
+                                  <b>DISCLAIMER</b><br>
+                                  Currently this module is getting build on. Bugs can be<br>
+                                  encountered. We are working hard on fixing these in the<br>
+                                  future. Currently known bugs are the following.<br>
+                                  <br>
+                                  * If a new server starts playing music the bot needs<br>
+                                  to inject all the default playlists songs in the database. <br>
+                                  This will result in all servers having laggy or no music<br>
+                                  for a duration of 5 / 10 seconds. This bug can unfortunately<br>
+                                  not be fixed but it also will not happen only once per server.<br>
+                                  <br>
+                                  * Sometimes when the pause command is used Curiosity <br>
+                                  will stop playing music but continues to transmit. <br>
+                                  Because of this it does not register it is paused and <br>
+                                  the resume will not work. to fix you need to let the <br>
+                                  bot rejoin the voice channel. <br>
+                                  <br>
+                                  * If music commands are used to fast after each other<br>
+                                  the music can start to skip every 2 seconds. To prevent<br>
+                                  this we have put in a 10 second cooldown between each<br>
+                                  time a command is used. If it does occure letting the bot<br>
+                                  rejoin the voice channel is the solution.
+                                  <br>
+                                  * Sometimes a song stops before it actually is finished.<br>
+                                  This is an internal bug within the FFMPEG. This module<br>
+                                  converts the videos to an mp3. In here it sometimes<br>
+                                  go's wrong. I can not fix this but if i have a better<br>
+                                  alternative i will switch to
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button class="modal-close"></button>
+        </div>
 
         <section class="section">
             <div class="continer">
@@ -161,10 +245,17 @@
                                     </ul>
                                 </li>
                             </ul>
-
                         </aside>
+                      </div>
 
-                    </div>
+                      <div class="column">
+                          <div class="container is-fluid has-text-centered">
+                              <p>
+                                  <button class="button is-danger is-large modal-button" data-target="#disclaimer" style="background-color:#B22222;">Music Guide (Click Here)</button>
+                              </p>
+                              <br>
+                          </div>
+
                     <div class="column">
                         <table class="table is-bordered is-narrow">
                             <thead>
