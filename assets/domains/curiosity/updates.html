@@ -1,0 +1,1132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="oskikiboy">
+  <meta name="description" content="Curiosity is a fun, Awesome and intuitive bot for Discord!">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Curiosity">
+  <meta property="og:image" content="img/icon.png">
+  <meta property="og:description" content="Curiosity is a fun, Awesome and intuitive bot for Discord!">
+
+  <meta name="twitter:title" content="Curiosity">
+  <meta name="twitter:image" content="img/icon.png">
+  <meta name="twitter:description" content="Curiosity is a fun, Awesome and intuitive bot for Discord!">
+
+  <link rel="shortcut icon" type="image/png" href="img/icon.png">
+  <meta name="theme-color" content="#3273dc">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <link href="discord/icon-discord.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bulma.css">
+
+  <script src="javascript/jquery-2.2.0.min.js"></script>
+  <script src="javascript/bulma.js"></script>
+</head>
+<style type="text/css">
+  @media screen and (max-width: 420px) {
+    #amazing-title {
+      font-size: 42px;
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    #amazing-title {
+      font-size: 46px;
+    }
+    #amazing-subtitle {
+      font-size: 30px;
+    }
+    #amazing-discord {
+      height: 31px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    #amazing-title {
+      font-size: 96px;
+    }
+    #amazing-subtitle {
+      font-size: 40px;
+    }
+    #amazing-discord {
+      height: 42px;
+    }
+  }
+</style>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="nav-left">
+      <a class="nav-item" href="index.html">
+                    <img src="img/icon.png" alt="Curiosity logo">
+                </a>
+      <a class="nav-item" href="index.html">
+                    <span>Curiosity</span>
+                </a>
+    </div>
+    <div class="nav-center">
+      <a class="nav-item" href="https://discord.gg/Z35Ce3k">
+                    <span class="icon">
+                        <br>
+                        <br>
+                        <i class="fa icon-discord" style="padding-top: 6px;"></i>
+                    </span>
+                </a>
+      <a class="nav-item" href="https://twitter.com/DEV_Curiosity">
+                    <span class="icon">
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                </a>
+      <a class="nav-item" href="https://github.com/oskikiboy/Curiosity-Website">
+                    <span>
+                        <i class="fa fa-github" style="padding-top: 2px;"></i>
+                    </span>
+                </a>
+    </div>
+    <div class="nav-right nav-menu">
+      <a class="nav-item" href="index.html">
+                    Home
+                </a>
+      <a class="nav-item" href="docs.html">
+                    Documentation
+                </a>
+      <a class="nav-item is-active" href="updates.html">
+                    Updates
+                </a>
+
+
+      <span class="nav-item">
+                    <a class="button" href="https://discord.gg/Z35Ce3k" >
+                        <span class="icon">
+                            <i class="fa fa-handshake-o"></i>
+                        </span>
+      <span>Support</span>
+      </a>
+      <a class="button is-info" href="https://discordapp.com/oauth2/authorize?permissions=2146958591&scope=bot&client_id=297146326372712449">
+                        <span class="icon">
+                            <i class="fa fa-plus"></i>
+                        </span>
+                        <span>Add</span>
+                    </a>
+      </span>
+    </div>
+    <span class="nav-toggle" id="nav-toggle">
+                <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    <div id="nav-menu" class="nav-right nav-menu is-hidden-tablet">
+      <a class="nav-item is-tab is-hidden-tablet" href="index.html">Home</a>
+      <a class="nav-item is-tab is-hidden-tablet" href="docs.html">Documentation</a>
+      <a class="nav-item is-tab is-hidden-tablet is-active" href="updates.html">Updates</a>
+    </div>
+  </nav>
+
+
+  <div id="important" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            27th of September - 2017
+          </div>
+          <div class="message-body">
+            <b>Curiosity v3.4</b><br>
+              The website is up to date again !!<br>
+              All new commands are added and broken<br>
+              once are removed. We wil set up some extra<br>
+              pages soon for extra help and information !<br>
+              Also we will create a youtube channel and upload<br>
+              videos on how to use and install Curiosity !<br>
+              You will be informed once these are online !
+              <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="october-31-18" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - October 31st 2018
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Bugs Fixed</b><br>
+            A couple of bugs have been fixed in<br>
+            Curiosity. If any new bugs occure feel<br>
+            free to contact us on our Discord!<br>
+            <hr>
+            <b>Re-designed the leaderboard:</b><br>
+            The Leaderboard got re-designed.<br>
+            Before you were able to get the top 10,<br>
+            20 and 30 of the most active guilds all<br>
+            time. Now you can also request most active<br>
+            users in Discord and the top most active <br>
+            users using Curiosity. We will now always<br>
+            show the top 30.<br>
+            More learderboard will be added in soon.<br>
+            The new leaderboards will be reset after<br>
+            a given time. So keep an eye on that !
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="october-29-18" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - October 29th 2018
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Updates in the music module</b><br>
+            as promised i have updated the music module<br>
+            now features like skip, save, delete, pause<br>
+            and resume can only be used if the user has<br>
+            has the <b>DJ</b> role. <br>
+            <br>
+            By default Curiousity will search for a role<br>
+            called DJ, but you can also customize this<br>
+            to a different role name if you want.<br>
+            This can be changed in the music menu !<br>
+            <hr>
+            <b>Music Menu 2.0</b><br>
+            We have completely remade the music settings<br>
+            menu. It has now multiple layers of menus <br>
+            with settings you can change. We also already<br>
+            have implemented the custom auto playlists <br>
+            menu altough this is not yet working. !<br>
+            Soon this will be available.<br>
+            <hr>
+            <b>Custom Pre Generated Playlists</b><br>
+            We have started development on custom <br>
+            pre generated playlists. When Curiosity first<br>
+            joins the voice channel it will generate your <br>
+            servers default playlist. These are the songs<br>
+            that play after the queue is empty. Soon we <br>
+            will have countless of pre made playlists with<br>
+            all having a different genre. You can then choose<br>
+            to switch your playlist and listen a different<br>
+            collection on songs.<br>
+            <hr>
+            <b>Any Suggestions ?</b><br>
+            If you ever have the need to reach me or you<br>
+            have some interesting ideas for me to work on ?<br>
+            Feel free to visit our Discord !<br>
+            Http://discord.gg/34gSmAN
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="october-27-18" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - October 27th 2018
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Website is up to date!</b><br>
+            I have updated the website now for all commands.<br>
+            Those that are new are added and broken are removed.<br>
+            See the Documentation for more information.<br>
+            <hr>
+            <b>New Music Module !</b><br>
+            Music is back in Curiosity and better then before !<br>
+            You can put song in a queue that is not limited.<br>
+            If you turn autoplay on in the music settings menu<br>
+            Curiousity will automatically switch to a default<br>
+            playlist we at time will generate for your server<br>
+            This playlist contains over 5000 songs and are of all<br>
+            sort. Curiosity will check if there is a new song in<br>
+            the queue after every playlist song. So even when<br>
+            Curiosity switched to the playlist because the queue<br>
+            was empty, it will revert back to the queue is a new song<br>
+            is entered.<br>
+            <br>
+            <b>Create your own playlist !</b><br>
+            You have the ability to save and delete songs of the<br>
+            default playlist or choose to create a new one. This you<br>
+            can do with the <b>Save</b> and <b>Delete</b> command.<br>
+            <b>BE AWARE:</b> Currently the music module is not scanning<br>
+            for a DJ role that the user needs to have to use certain commands.<br>
+            This will be added in a later update but, for now be aware<br>
+            if you create your own playlist other can delete your songs. <br>
+            The same counts for skip, volume, join and the other music commands.<br>
+            This will all be fixed in a later update.
+            <br>
+            <b>AutoJoin a Voice channel</b><br>
+            You can also set Curiosity to auto join a certain voice channel.<br>
+            The channel ID can be set in the music settings menu. Once this<br>
+            setting is activated Curiousity will join that voice channel<br>
+            once anything is said on any channel. The bot will then rejoin the<br>
+            channel once curiosity restarts by the dev or a crash.<br>
+            This can be used to to listen to music 24/7 !!<br>
+            <br>
+            <b>DISCLAIMER:</b><br>
+            If the auto join is set to on Curiosity will come jump back<br>
+            in voice and resume playing music. If you do not want Curiosity<br>
+            to join back into voice open the music settings menu and turn<br>
+            auto join off first. After that the bot will leave the voice channel.<br>
+            <hr>
+            <b>More music features will be added in the future !</b>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="october-7-18" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - October 7th 2018
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Curiosity version 3.0 is released !</b><br>
+            In this version Curiosity became a whole lot<br>
+            more customizable. Instead of using certain roles<br>
+            in order staff commands you can now customize <br>
+            your own via the <b>.settings</b> menu ! <br>
+            This is one of the many new settings you can<br>
+            set via this menu. <br>
+            <hr>
+            <b>NSFW overhaul</b><br>
+            Many of you asked for the ability to customize<br>
+            your own nsfw channels, not only those that bare<br>
+            the name nsfw. We have heard your prayers !!<br>
+            You are now able to set any or multiple channels<br>
+            as being your nsfw channel !. You can also allow<br>
+            all channels for nsfw or completely disable it.<br>
+            Simply type <b>.nsfw</b> in chat and follow the instructions.<br>
+            <hr>
+            <b>Repair and cleanup</b><br>
+            In the last 12 months some of the commands stopped <br>
+            working. This often is due to APIs chaning the<br>
+            endpoints or structure of the code. Thanks to all <br>
+            of you that send in a bug report. We have repaired<br>
+            the broken commands. Those that could not have been<br>
+            repaird, most likely to a deprecated API have been deleted.<br>
+            We also have removed some old features and commands<br>
+            as they were barely used or not working with<br>
+            the way this new bot version works. Some of these features<br>
+            will be reintroduced at a later time frame.<br>
+            <hr>
+            <b>Advertise your own server on Curiosity !</b><br>
+            We already had the bump feature in version 2.0<br>
+            but it become even better in version 3.0 !<br>
+            If you bump your server you will not only advertise<br>
+            your server to <b>The Curiousity Project Discord</b>,<br>
+            but also to all other servers that have a bump<br>
+            channel set in Curiousity settings menu. Those <br>
+            that have this channel set will automatically be <br>
+            featured in our server in the spotlight channel.<br>
+            You will also appear as a supporter in the bot itself.<br>
+            Bumps can be done every 12 hours and this will include <br>
+            a quick server description inclusive your server invite link.<br>
+            Reach a wider audiance with Curiosity Bumps and bump away !<br>
+            <hr>
+            <b>Last Word:</b><br>
+            As i have recoded the whole but there is (obviously) to much<br>
+            changed to recap this in 1 update message. There for we would<br>
+            like to encourage you to type <b>.help</b> in chat and just <br>
+            be the explorer you always wanted to be ! ;)<br>
+            We hope you have a lot of fun with Curiosity.<br>
+            If anything is wrong, need help or a bug you are always free<br>
+            to join our server. Contact <b>Gizmo#5057</b>.<br>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="september-18-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - September 18th 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Curiosity Version 2.0 is released !</b><br>
+              More information see Important button above !<br>
+            <hr>
+            <b>Website Updated</b><br>
+            The website is not fully up to date<br>
+            with the new version of Curiosity. <br>
+            Some commands have been deleted or replaced.<br><br>
+            <b>Version 2.0 Changelogs</b><br>
+            <b>Toggle Commands:</b> You can now turn almost<br>
+            all commands in Curiosity on and off. Simply type <br>
+            <b>;Enable / Disable</b> and then Curiosity will ask<br>
+            what command to disable. Then type the commands name.<br><br>
+            <b>Better System:</b> All commands are re-coded.<br>
+            Information and Error messages are not easier to read<br>
+            and understand. Previous bugs and erros have been resolved.<br>
+            <hr>
+            <b>Commands Deleted:</b> The following commands are<br>
+            no longer available on Curiosity. <br>
+            <u>Botservers - Giffy - Shib - resetstabs/spanks<br>
+              Add - Divide - Multiply and Subtract.</u><br>
+            The Math commands are taken over with 1 single command.<br>
+            to use the math use <b>;Calculator</b>.<br>
+            <hr>
+            <b>NEW Commands: [;Airhorn / soundboard ]</b><br>
+            We are introducing the airhorn / soundboard to Curiosity!<br>
+            At the moment we are working on it but you can already<br>
+            have a look at it. See Documentation page for more info.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="august-7-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - August 7th 2017
+          </div>
+          <div class="message-body">
+            <b>Curiosity v2.0</b><br>
+            Currently we are working on completely<br>
+            re-coding Curiosity. This because the old<br>
+            was writen when I first started to learn coding.<br>
+            Right now we are re-scripting everything in a more<br>
+            advanced way. <br><br>
+
+            <b>What will be new on v2.0 ?</b><br>
+            A lot of new things to be exactly.<br>
+            not only would the new framework support more<br>
+            commands for in the furture but, it also enabled<br>
+            me to make features like the ability of enabling and<br>
+            disabling commnands. <br>
+            Also v2.0 will have a complete new look to itself.<br>
+            we are building a new theme in Curiosity specially<br>
+            the Errors will be better looking and quicker to understand.<br><br>
+
+            <b>When does v2.0 come out ?</b><br>
+            This is a slow process as Curiosity knows over 125 commands<br>
+            and each and every of the 150 files need to be re-written.<br>
+            It can take weeks before v2.0 will be done and uploaded to the main bot<br><br>
+
+            <b>How to get Curiosity v2.0 ?</b><br>
+            If you have <b>Curiosity</b> already on your server<br>
+            you do not need to do anything. As soon as v2.0<br>
+            is completed we will swap the new files with the old once.<br>
+            in other words version 2.0 will be come current Curiosity !<br><br>
+
+            <b>More information</b><br>
+            will follow soon. Just keep this website<br>
+            in mind if you need more info.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="august-2-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - August 2nd 2017
+          </div>
+          <div class="message-body">
+            <b>Help Menu Overhaul</b><br>
+            The help menu had another complete<br>
+            overhaul to let it work even better !<br>
+            Also the help menu will now tell you<br>
+            the server prefix. So if you change the<br>
+            prefix it will change in your help menu also !<br>
+            <hr>
+            <b>New Commands:</b><br><br>
+            <b>Youtube</b><br>
+            With this command you can search<br>
+            for a youtube channel or specific youtube video. <br><br>
+            <b>Vote</b><br>
+            This command will re-direct you to DiscordBots.org<br>
+            were you can vote for all kind of bots.<br>
+            We hope you have 1 min of your time to give<br>
+            Curiosity your upvote :). This will help us a lot !<br>
+            You dont need an account as it logs in via Discord !<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="august-1-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - August 1st 2017
+          </div>
+          <div class="message-body">
+            <b>New Commands:</b><br>
+            <b>Twitch</b> See if he or she is live !<br>
+            <b>FortuneCow</b> Funny random text !<br><br>
+
+            <b>New NSFW Commands</b><br>
+            I have been asked a lot to make more<br>
+            NSFW commands. People wanted more different<br>
+            commands then the original we already had.<br>
+            Well you guys are lucky then as i have made<br>
+            10 new NSFW Commands for to you to giggle about.<br>
+            <u>These are the new NSFW Commands</u><br>
+            <b>Asian</b> - <b>Squirt</b> - <b>Fisting</b><br>
+            <b>Celebirty</b> - <b>Pornstar</b> - <b>Cosplay</b><br>
+            <b>Toys</b> - <b>Bukkake</b> - <b>Redhead</b><br>
+            <hr>
+            <b>Idea's for new commands ?</b><br>
+            Are always welcome !!<br>
+            you can send in your idea's via the command<br>
+            <b>;MsgDev</b>. I will look in to it soon.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-28-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 28th 2017
+          </div>
+          <div class="message-body">
+            <b>New Command</b>
+            <b>Twitch</b><br> This feature will<br>
+            look if the twitcher that you<br>
+            specify is LIVE ! <br>
+            Live or not we will provide you<br>
+            with the Twitch channel link of the<br>
+            name you typed in chat. <br>
+            If there is no channel with that name<br>
+            you will get a error page from twitch<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+  <div id="july-25-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 25th 2017
+          </div>
+          <div class="message-body">
+            <b>Command Changed:</b><br>
+            <b>Weed:</b> instead of showing<br>
+            content that we picked ourself<br>
+            we now show random content from google.<br>
+            Also this command is now in a embed<br>
+            with a random color added to it.<br>
+            <b>8Ball:</b> We have changed some<br>
+            of the 8Ball answers. Also have we added<br>
+            some fun new answers that makes this 8Ball<br>
+            feature different from all the others.<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>Trump</b>: Gives you a random Trump Meme.<br>
+            <b>Clinton</b>: Gives you a random Clintons Meme<br>
+            <b>Obama</b>: Gives you a random Obama Meme<br>
+            <b>Putin</b>: Gives you a random Putin Meme<br>
+            <b>Russia</b>: Gives you a random Russia Meme<br>
+            <hr>
+            <b>Any Idea's ?</b><br>
+            If you have any idea to make<br>
+            this bot better ? You may always<br>
+            lets us know via <b>;MSGDEV</b><br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-24-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 24th 2017
+          </div>
+          <div class="message-body">
+            <b>Command Repaired:</b><br>
+            Instead of only showing the<br>
+            default prefix when you use <u>;prefix</u><br>
+            we are now giving you the server<br>
+            prefix may this one be changed.<br>
+            So if you dont know Curiosity's<br>
+            server prefix. You can now search it up.<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>Loli</b>: Gives you a random Lolita Picture.<br>
+            <b>PermLVL</b>: Gives you your bot server permission lvl.<br>
+            <hr>
+            <b>Command Changes:</b><br>
+            <b>;Points</b> became <b>;Credits</b><br>
+            This because we are making ourself ready<br>
+            to implement games into Curiosity.<br>
+            When is not sure yet ! <br>
+            <b>Credits</b> became <b>ThanksTo</b><br>
+            ;ThanksTo or ;TT ill be the new<br>
+            command use for the special thanks to those<br>
+            that helped on the development of Curiosity.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-18-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 18th 2017
+          </div>
+          <div class="message-body">
+            <b>Website Update</b><br>
+            The Documentation page has been<br>
+            remade. From now on you can see<br>
+            the Shortcut and Input also in <br>
+            a seperate column. <br><br>
+            <u>Please Note:</u><br>
+            Text That is in between [Brackets]<br>
+            means it is optional and are not <br>
+            needed to make the command work.<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>;RemindDel</b><br>
+            This will delete your reminder<br>
+            of Curiosity's Database. You can<br>
+            set a reminder via ;RemindMe<br><br>
+
+            <b>;ListCMD</b><br>
+            Using this command Curiosity wil<br>
+            send you a mail {DM} with all<br>
+            commands currently listed for use.<br>
+            with the command <u>;Info</u> you can<br>
+            find more detailed information<br>
+            about the commands in this list. !<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-17-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 17th 2017
+          </div>
+          <div class="message-body">
+            <b>ADV CMD Info menu Finished</b><br>
+            After 3 days of hard work i can finally<br>
+            announce that the advanced command info menu<br>
+            if completely working and ready for use. <br>
+            All commands that Curiosity has right now<br>
+            have it's own detailed information window. <br><br>
+            On this window you will find more information<br>
+            about what the command is and its usage.<br><hr>
+
+            <b>Repaired the following commands</b><br>
+            <b>Vmute - VUNMute</b> as they were not<br>
+            showing a error window when the code was<br>
+            used wrong. This has been fixed and it will<br>
+            now spawn a error window when the command is<br>
+            incomplete or used wrong.<br><hr>
+
+            <b>New Commands</b><br>
+            <b>;RemindMe</b> will enable you to save 1 reminder<br>
+            to Curiosity's database. Please do note if you set a<br>
+            2nd reminder the 1st one will be deleted !<br>
+            <b>;Reminder</b> This feature will show the reminder<br>
+            you have saved on Curiosity.<br><hr>
+
+            <b>Quick Guide</b><br>
+            On the main Documentation page you now<br>
+            find a <u>Quick Guide / Starters Info</u><br>
+            instead of a command explination.<br>
+            From now on if you come to this page you<br>
+            can find multiple instructions how to work<br>
+            with Curiosity's commands.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-15-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 15th 2017
+          </div>
+          <div class="message-body">
+            <b>Advanced Info Commando</b><br> This new command will give you all<br> detailed information about the command<br> specified and its uses.<br><br> First you type <b>;Info</b> in chat.<br> Then you type any command<br>
+            <u><b>WITHOUT PREFIX</u></b><br> to have the menu spawn the info window.<br><br>
+            <u>CURRENTLY IN DEVELOPMENT</u><br> This means not every command has <br> a detailed information window.<br> The following commands are ready for use:<br><br> 8Ball - Add - Advice - AFK - Alive<br> Ass - Ban - Bill - Bombshell - Boobs<br> BotServers
+            - Cat - Chuck - Coin<br> Credits - Dicks - Divide - Dog<br> DogFact - E621 - Ebone - Embed<br> Eval - Eyes - Fanceh - Flush<br> Game - Giffy - Gizmo - GMC - Help<br> Goodboy - Google - HCPorn - Hentai<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-14-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 14th 2017
+          </div>
+          <div class="message-body">
+            <b>New Commands:</b><br><br>
+            <b>;MsgDev</b> ( ;MD ) Contact the Developer.<br>
+            <b>;Opinion</b> ( ;OP ) Send us your opinion of Curiosity.<br>
+            <b>;ReportBug</b> ( ;RB ) Send us a Bug report.<br>
+            <hr>
+            <b>;Info</b> () See detailed CMD info<br> This feature is under construction and not<br> all commands have attached detailes yet.<br>
+            <u>Commands that can be used:</u><br> 8Ball - Add - Advice - AFK - Alive<br> Ass - Ban - Bill - Bombshell - Boobs<br> BotServers - Cat - Chuck - Coin<br> Credits - Dicks<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-9-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 9th 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Repaired commands:</b><br>
+            <b>All Music Commands</b> are working again.<br> We have updated the module and fixed the issues<br> Have fun listening to your music ! :)<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>;Dog</b> ( ;Woof ) Returns a random Dog PNG / GIF<br>
+            <b>;Game</b> () Send a game invite to others on chat.<br>
+            <b>;Subredit</b> ( ;Subr ) Search a specific topic via reddit.<br>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="july-8-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - July 8th 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Repaired commands:</b><br>
+            <b>;Purge</b> is now working again correctly.<br> And we have changed the purge code to be more stable<br> If you find any other bugs please mail <b>Gizmo#5057</b>.<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>;Flush</b> ( ;FL ) Delete Specific amount of bot messages<br>
+            <b>;Bill</b> () Gives random Bill Memes<br>
+            <b>;Reverse</b> ( ;Rev) Reverse your text<br>
+            <b>;Initial</b> ( ;Init ) Capitalize all words<br>
+            <b>;Fanceh</b> ( ;Fan ) Fancy your text<br>
+            <b>;Tiny</b> ( ;TY ) Schrink Your text<br>
+            <b>;Space</b> () Space out all letters<br>
+            <b>;XDCD</b> ( ;XD ) Gives a random XDCD<br>
+            <b>;Weather</b> ( ;WEA ) Gives local - country weather reports
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="may-7-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - May 6st 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Repaired commands:</b><br>
+            <b>;UserInfo</b> is now working again correctly.<br> If you find any other bugs please mail <b>Gizmo#5057</b>.<br>
+            <hr>
+            <b>New Commands:</b><br>
+            <b>;eyes</b> ( ;EYE ) I can see you !<br>
+            <b>;Smug</b> ( ;SM ) Gives you a random Smug picture<br>
+            <b>;Shib</b> ( ;SH / ;Doge ) Gives you a random shib picture.<br>
+            <hr>
+            <b>Changed:</b><br>
+            <u>Added in</u> {loading please hold on...}<br> This you will see on almost all commands. It will <br> spawn just before the result of your used command.<br><br> Depending were your discord server is located the bot<br> can react a bit slow.
+            to counter this we added a loading warning.
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="may-6-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - May 6st 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>NSFW Change !!</b><br> I have got a few requests to open up the NSFW commands<br> without the need of a <u>NSFW</u> role.<br> Also i saw a lot of times people try to use the commands<br> and even after all the warnings that you need the
+            role<br> people just dont understand it.<br><br>
+            <b>Result:</b><br> I have removed the <u>Check Role for NSFW</u> feature to let<br> Curiosity search for a NSFW role. This means you can now use<br> all NSFW commands without the need of the matching role. <br><br>
+            <b>Remember:</b><br> You still need a channel called <u>NSFW</u> for the commands to work.<br> I was requested but i am unsure if i want to disable this as then<br> all other channels can be spammed with NSFW content.<br> So for now you still
+            need the NSFW channel untill we have added<br> a feature to turn the commands on and off !!!<br>
+            <hr>
+            <b>Important notice:</b><br> I will be on vacation for a little bit, going to see the beaches :P<br> for those liking to know the destination will be Spain.<br> Therefor i will not be able to add new things and or update / debug.<br> After
+            my vacation i will be working on Curiosity as usual.<br><br>
+            <b>May the bot go offline !!!</b><br> Then please contact <b>haxmat#2439</b>.<br> He has acces to the server and able to restart the bot<br> during my hollidays.<br><br>
+            <b>Team Curiosity</b> wishes everyone <u>Great Hollidays !!!!</u>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="may-4-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - May 4th 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Fixed the following</b><br><br>
+            <b>Multiply</b> Is now counting right again.<br>
+            <b>Lockdown Release</b> is now setting the <u>Talk Permisions</u><br> back to 'Green / true' instead of settings it to false and there for<br> gray / no talk power when deactivated.<br>
+            <b>Level System</b> was only counting server side do to a coding mistake<br> It is now counting your score for each server individually incl global<br>
+            <hr>
+            <b> New Features Added !!</b><br><br>
+            <b>;Cat</b> - Gives you a random cat picture embeded.<br>
+            <b>;Dogfact</b> ( ;DF ) Give you a random Dog fact embeded.<br>
+            <b>;Insult @user</b> ( ;INS ) Insult a random member.<br>
+            <b>;Rule34</b> ( ;34 ) NSFW function - Anime NSFW.<br>
+            <b>;E621</b> ( ;E6 ) NSFW Function - Anime NSFW.<br>
+            <b>;Giffy {search}</b> ( ;GIF ) Spawns a giffy on chat.<br>
+            <b>;Leetspeak {text}</b> ( ;LSP ) Convert your text into Leet.<br>
+            <b>;StrokeEgo @user</b> ( ;EGO ) Stroke your or someones ego.<br><br>
+            <b> Additional Information </b><br><br>
+            <b>Insult</b> is a fancy insult and those are very mild.<br> how every i did add around 20 gifs and pictures to spawn with it<br> and those have a little more touch you could say haha. <br>
+            <b>StrokeEgo</b> is unbelievably fun !!<br> You can use it in many different ways.<br>
+            <u>;Ego</u> will stroke your ego by using your name.<br> same counts for ;ego @yourname.<br>
+            <u>;Ego @user</u> will stroke someone else it's ego. <br>
+            <br> We are also adding in features like setting custom trigger<br> messages, welcomes message and so on. Any ideas you always may<br> contact <b>Gizmo#5057</b>
+            <hr>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="may-3-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - May 3rd 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Discord.js Version Updated!</b><br> Curiosity is now updated to Discord Javascript v11.1!<br> Many things have changed in Discord.js and therefor it could be<br> that you experiance some bugs wile using Curiosity. <br> May this occure please
+            contact ( <b>@Gizmo#5057</b> ) on Discord.<br>
+            <hr>
+            <b>New Commands / Features !!</b><br><br> We have added several new features to Curiosity.<br>
+            <b>Have ideas for new features ?</b><br> Feel free to DM ( <b>@Gizmo#5057</b> ) On Discord.<br><br>
+            <b>;HCPorn</b> ( ;HCP ) gives you a random image / gif of harcore porn.<br>
+            <b>;Bombshell</b> ( ;BSH ) gives you a random image / gif of a Bombshell.<br>
+            <b>;Pokesex</b> ( ;PKS ) Gives you a random image / gif of Pokemon sex.<br>
+            <b>;Ass</b> Gives you a random image / gif of some great ass !!!<br>
+            <b>;Ebone</b> ( ;EBO ) Gives you a random image / gif of Ebone sex.<br>
+            <b>;Teens</b> ( ;TNS ) Gives you a random image / gif of a Teen(18+)<br>
+            <hr>
+            <b>VoiceChannel Join</b> because of the new update the command <b>;Join</b> has stopped working.<br> We have disabled this function for the time being. !<br> You can still sommun Curiosity via <b>;Play Name</b> - <b>;Play Link</b>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <div id="may-1-17" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container is-fluid" style="padding:40px">
+        <article class="message is-info">
+          <div class="message-header">
+            Changelogs - May 1st 2017
+          </div>
+          <div class="message-body">
+            <hr>
+            <b>Help Menu Changed !</b><br>
+            <u>We have changed the help menu completely !!!</u><br> The old help DM became to big as we are adding more<br> The new help menu is <u>completely interactive !!</u><br><br>
+            <b>How does it work ?</b><br> you type <b>;Help</b> - <b>;H</b> on chat and a menu will spawn.<br> Now the only thing you have to do is typing the command in chat <br> to let the menu trigger the next window. <u>No Prefix !!</u><br>
+            <hr>
+            <b>Multiple Features added to a Database !</b><br> Features as <b>;Warn</b> - <b>;Kick</b> - <b>;Ban</b> - <b>;Stab</b> - <b>;Spank</b><br> were before counted as server only. From now on all the above <br> features will also be counted Globally.<br>
+            <b>This means</b> that if you use one of the above featues the member<br> (example warn) will receive a warning for both server and global.<br>
+            <b>Global means</b> for all servers Curiosity is on !!<br>
+            <hr>
+            <b>Known Bugs</b><br><br>
+            <b>Help Menu</b><br> After activating the help menu with <b>;Help / ;H</b> you have <br> to type the next command perfectly right !!<br> If you type anything after the menu is activated that is not<br> listed on the help menu list the menu
+            will cancel !!
+          </div>
+        </article>
+      </div>
+    </div>
+    <button class="modal-close"></button>
+  </div>
+
+
+  <section id="header" class="hero is-info is-bold" style="background: url('img/banner6.jpg');background-size: cover;">
+    <div class="hero-head">
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2" style="font-family: Montserrat;">
+                        <span style="title is-2">Updates</span>
+                    </h1>
+        <h2 class="subtittle"><strong>Curious</strong> to find out whats new?</h2>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <div class="container is-fluid has-text-centered">
+    <p>
+      <button class="button is-primary is-large modal-button" data-target="#important">Important Message!</button>
+    </p>
+    <hr>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#october-31-18">Changelogs - October 31st 2018</button>
+    </p>
+    <hr>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#october-29-18">Changelogs - October 29th 2018</button>
+    </p>
+    <hr>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#october-27-18">Changelogs - October 27th 2018</button>
+    </p>
+    <hr>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#october-7-18">Changelogs - October 7th 2018</button>
+    </p>
+    <hr>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#september-18-17">Changelogs - September 18th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#august-7-17">Changelogs - August 7th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#august-2-17">Changelogs - August 2nd 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#august-1-17">Changelogs - August 1st 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-28-17">Changelogs - July 28th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-25-17">Changelogs - July 25th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-24-17">Changelogs - July 24th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-18-17">Changelogs - July 18th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-17-17">Changelogs - July 17th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-15-17">Changelogs - July 15th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-14-17">Changelogs - July 14th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-9-17">Changelogs - July 9th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#july-8-17">Changelogs - July 8th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#may-7-17">Changelogs - May 7th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#may-6-17">Changelogs - May 6st 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#may-4-17">Changelogs - May 4th 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#may-3-17">Changelogs - May 3rd 2017</button>
+    </p>
+    <br>
+    <p>
+      <button class="button is-info is-large modal-button" data-target="#may-1-17">Changelogs - May 1st 2017</button>
+    </p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="links" class="hero is-dark is-small is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="has-text-centered">
+          <h1 class="title">Please PM <strong>Gizmo#5057</strong> if you find any bugs.</h1>.
+          <h2 class="subtitle">If you find any problems with the website please PM <strong>oskikiboy#5467</strong>.</h2>
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          The <strong>Curiosity Website</strong> by <a href="https://github.com/oskikiboy">oskikiboy</a>. <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The <strong>Curiosity</strong> <a href="https://discord.gg/zpcGaCB">Discord</a>          Bot by <a href="https://github.com/GeneralGizmo">Gizmo</a>
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/oskikiboy">
+                            <i class="fa fa-github"></i>
+                        </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
