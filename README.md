@@ -11,7 +11,7 @@ that *Oskikiboy* made we are ready some
 some fresh new looks.  
 
 The repository of the current website
-is not public as this one is copywrighted.
+is not public as this one is copyrighted.
 
 If you need any help or if you want to suggest
 anything new to the website or one of our 
