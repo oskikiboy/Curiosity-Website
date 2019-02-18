@@ -1,2 +1,0 @@
-## Curiosity Website
-
