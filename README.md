@@ -10,9 +10,6 @@ After 4 years with the awesome design
 that *Oskikiboy* made we are ready some 
 some fresh new looks.  
 
-The repository of the current website
-is not public as this one is copyrighted.
-
 If you need any help or if you want to suggest
 anything new to the website or one of our 
 projects you can always contact us via the contact 
@@ -31,3 +28,7 @@ my projects then anything else.
 
 He was a great sport and helped me a lot. 
 I am very thankfull for that buddy. :D
+
+----------------------------------
+Website Github Page = https://github.com/Gyzimo/CuriosityWeb
+----------------------------------
